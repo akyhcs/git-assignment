@@ -53,7 +53,7 @@ archive 'target/*.war'
 }
 
 stage('Tomcat Deployment'){
- deploy adapters: [tomcat8(credentialsId: 'tomcat01', path: '', url: 'http://http://fomop41962dns.eastus2.cloudapp.azure.com:8080/')], contextPath: 'petclinic', war: 'files/petclinic.war'
+ deploy adapters: [tomcat8(credentialsId: 'tomcat01', path: '', url: 'http://fomop41962dns.eastus2.cloudapp.azure.com:8080/')], contextPath: 'petclinic', war: 'files/petclinic.war'
 }
  
  
